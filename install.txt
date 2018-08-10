@@ -1,0 +1,6 @@
+
+Install and update flask
+
+In command line, type:
+
+pip install -U Flask
