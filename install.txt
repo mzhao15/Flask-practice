@@ -3,4 +3,28 @@ Install and update flask
 
 In command line, type:
 
-pip install -U Flask
+	pip install -U Flask
+	pip install flask-wtf
+
+
+Note: DO NOT name your script as 'flask'. Otherwise, it will show ImportError: cannot import Flask from flask
+
+
+Run:
+	Navigate to the folder.	
+	In command line, type:
+		
+		Linux/OS: export FLASK_APP=filename.py
+		Windows: set FLASK_APP=filename.py
+	Then type:
+		flask run 
+	
+	If success, it will give an IP address. Copy and past this address in a brower, you will be able to see the application.
+
+	http://127.0.0.1:5000/   
+	or http://localhost:5000/  both will word.
+
+
+In order to see the modifications in the code without stoppping and restarting the app, can use this command to change the settings:
+	Linux/OS: export FLASK_DEBUG=1
+	Windows: set FLASK_DEBUG=1
